@@ -21,5 +21,11 @@ export const yarg = yargs(hideBin(process.argv))
     default: false,
     describe: 'Limit of the multiplication'
 })
+.check(( argv, options) => {
+
+    if( argv.b < 1) throw ('The base must be greater than 0');
+    return true;
+
+} )
 
 .parseSync();
