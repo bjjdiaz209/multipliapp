@@ -6,3 +6,8 @@ dist/
 
 # Output directory
 outputs/
+
+
+custom-outputs/
+test-destinations/
+coverage/
